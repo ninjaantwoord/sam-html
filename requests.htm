@@ -1,7 +1,63 @@
-<html><head><title>Song Requests</title></head><body>
-<h2>Song Request Form</h2>
-<form method="get" action="http://69.245.8.2:1221/searchsong.html/">
-<input type="text" name="search" placeholder="Enter artist or title">
-<input type="submit" value="Request Song">
-</form>
-</body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Request a Song</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 2em;
+      color: #333;
+    }
+    h2 {
+      color: #0077cc;
+      text-align: center;
+    }
+    form {
+      background: white;
+      padding: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    input[type="text"] {
+      width: 75%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+    input[type="submit"] {
+      padding: 10px 15px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+    .notice {
+      text-align: center;
+      margin-top: 2em;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h2>🎵 Search & Request a Song</h2>
+  <form method="get" action="http://69.245.8.2:1221/searchsong.html" target="_blank">
+    <input type="text" name="search" placeholder="Enter artist or title..." required>
+    <input type="submit" value="Search">
+  </form>
+  <div class="notice">
+    Results will open in a new tab. This form connects directly to your SAM Broadcaster at <strong>69.245.8.2:1221</strong>.
+  </div>
+</body>
+</html>
